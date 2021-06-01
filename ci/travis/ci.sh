@@ -289,7 +289,7 @@ _bazel_build_before_install() {
     target="//:ray_pkg"
   fi
   # NOTE: Do not add build flags here. Use .bazelrc and --config instead.
-  bazel build "${target}"
+  bazel build -n3 "${target}"
 }
 
 
