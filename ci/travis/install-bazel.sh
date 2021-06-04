@@ -52,7 +52,7 @@ if [ "${OSTYPE}" = "msys" ]; then
   mkdir -p "${target%/*}"
   curl -f -s -L -R -o "${target}" "https://github.com/bazelbuild/bazel/releases/download/${version}/bazel-${version}-${platform}-${achitecture}.exe"
 elif [ "$(uname -m)" = "aarch64" ]; then
-  wget -O "bazel-linux-arm64" "https://github.com/bazelbuild/bazel/releases/download/3.6.0/bazel-3.6.0-linux-arm64"
+  wget -O "bazel-linux-arm64" "https://github.com/bazelbuild/bazel/releases/download/4.1.0/bazel-4.1.0-linux-arm64"
   chmod +x bazel-linux-arm64
   sudo mv bazel-linux-arm64 /usr/local/bin/bazel
 else
